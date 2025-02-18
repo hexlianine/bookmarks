@@ -5,3 +5,6 @@ These tools have helped me build some cool stuff, and I hope they can help you t
 - [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - cs.usfca.edu
 - [Algorithm Visualizer](https://algorithm-visualizer.org/) - Welcome to Algorithm Visualizer, an interactive online platform designed to bring algorithms to life through visualization. Whether you're a student, teacher, or professional, our platform provides an engaging way to explore and understand various algorithms.
 - [Emmet](https://docs.emmet.io/abbreviations/syntax/) - Emmet uses syntax similar to CSS selectors for describing elements’ positions inside generated tree and elements’ attributes.
+- [readdy.ai](https://readdy.ai/) - Transform your idea into beautiful design with code in seconds by our most advanced AI.
+- [bolt.new](https://bolt.new/) - Prompt, run, edit, and deploy full-stack web and mobile apps.
+- [lovable.dev](https://lovable.dev/)
