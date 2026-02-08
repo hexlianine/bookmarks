@@ -8,3 +8,7 @@ These tools have helped me build some cool stuff, and I hope they can help you t
 - [readdy.ai](https://readdy.ai/) - Transform your idea into beautiful design with code in seconds by our most advanced AI.
 - [bolt.new](https://bolt.new/) - Prompt, run, edit, and deploy full-stack web and mobile apps.
 - [lovable.dev](https://lovable.dev/)
+
+
+[SpotBugs](https://github.com/spotbugs/spotbugs) - A tool for static analysis to look for bugs in Java code. 
+[Spotless](https://github.com/diffplug/spotless/tree/main) - Keep your code spotless.
