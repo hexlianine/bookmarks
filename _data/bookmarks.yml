@@ -1,0 +1,58 @@
+site_title: ".bookmarks"
+site_intro: "Curated tools for design, coding, and fast prototyping."
+categories:
+  - name: "Design"
+    note: "Visual ideation and design-to-code tools."
+    links:
+      - title: "readdy.ai"
+        url: "https://readdy.ai/"
+        description: "AI-assisted workflows from mockups to production UI."
+        tag: "AI Design"
+
+  - name: "Build"
+    note: "Rapid app generation and prototyping."
+    links:
+      - title: "bolt.new"
+        url: "https://bolt.new/"
+        description: "Prompt-based full-stack web and mobile app builder."
+        tag: "Full Stack"
+      - title: "lovable.dev"
+        url: "https://lovable.dev/"
+        description: "Prototype and launch apps from natural language ideas."
+        tag: "Prototype"
+
+  - name: "Algorithms"
+    note: "Understand logic through interactive visuals."
+    links:
+      - title: "Algorithm Visualizer"
+        url: "https://algorithm-visualizer.org/"
+        description: "See algorithm execution as animated step-by-step flows."
+        tag: "Learning"
+      - title: "Data Structure Visualizations"
+        url: "https://www.cs.usfca.edu/~galles/visualization/Algorithms.html"
+        description: "Classic sorting, graph, tree, and data structure demos."
+        tag: "Data Structures"
+
+  - name: "Developer Utilities"
+    note: "Small tools that improve daily workflow."
+    links:
+      - title: "TAAG"
+        url: "http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20"
+        description: "Turn text into ASCII art banners for terminals and docs."
+        tag: "Utility"
+      - title: "Emmet Syntax"
+        url: "https://docs.emmet.io/abbreviations/syntax/"
+        description: "Speed up HTML/CSS writing with compact abbreviations."
+        tag: "Frontend"
+
+  - name: "Code Quality"
+    note: "Static checks and formatting standards."
+    links:
+      - title: "SpotBugs"
+        url: "https://github.com/spotbugs/spotbugs"
+        description: "Find likely Java bugs with static analysis."
+        tag: "Java"
+      - title: "Spotless"
+        url: "https://github.com/diffplug/spotless/tree/main"
+        description: "Automated formatting and style enforcement across languages."
+        tag: "Formatting"

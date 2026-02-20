@@ -1,0 +1,17 @@
+---
+layout: default
+title: .bookmarks
+---
+
+<main class="bookmark-page">
+  <section class="bookmark-hero">
+    <h1>{{ site.data.bookmarks.site_title }}</h1>
+    <p>{{ site.data.bookmarks.site_intro }}</p>
+  </section>
+
+  <section class="category-grid">
+    {% for category in site.data.bookmarks.categories %}
+      {% include bookmark-card.html category=category %}
+    {% endfor %}
+  </section>
+</main>

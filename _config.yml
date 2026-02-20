@@ -2,3 +2,12 @@ title: .bookmarks
 description: Curated bookmarks for developers.
 theme: jekyll-theme-cayman
 markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - LICENSE

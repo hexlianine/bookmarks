@@ -1,0 +1,13 @@
+<article class="category-card">
+  <h2 class="category-title">{{ include.category.name }}</h2>
+  <p class="category-note">{{ include.category.note }}</p>
+  <ul class="bookmark-list">
+    {% for link in include.category.links %}
+      <li class="bookmark-item">
+        <a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.title }}</a>
+        <p>{{ link.description }}</p>
+        <span class="chip">{{ link.tag }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</article>
