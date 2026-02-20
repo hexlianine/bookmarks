@@ -4,14 +4,17 @@ title: .bookmarks
 ---
 
 <main class="bookmark-page">
-  <section class="bookmark-hero">
-    <h1>{{ site.data.bookmarks.site_title }}</h1>
-    <p>{{ site.data.bookmarks.site_intro }}</p>
+  {% for category in site.data.bookmarks.categories %}
+  <section class="category-section">
+    <header class="category-header">
+      <h2 class="category-title">{{ category.name }}</h2>
+      <p class="category-note">{{ category.note }}</p>
+    </header>
+    <div class="card-grid">
+      {% for link in category.links %}
+        {% include bookmark-card.html link=link %}
+      {% endfor %}
+    </div>
   </section>
-
-  <section class="category-grid">
-    {% for category in site.data.bookmarks.categories %}
-      {% include bookmark-card.html category=category %}
-    {% endfor %}
-  </section>
+  {% endfor %}
 </main>
