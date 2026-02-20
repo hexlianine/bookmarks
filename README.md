@@ -1,14 +1,14 @@
 # .bookmarks
-These tools have helped me build some cool stuff, and I hope they can help you too.
 
-- [Text to ASCII Art Generator (TAAG)](http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20) - patorjk
-- [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) - cs.usfca.edu
-- [Algorithm Visualizer](https://algorithm-visualizer.org/) - Welcome to Algorithm Visualizer, an interactive online platform designed to bring algorithms to life through visualization. Whether you're a student, teacher, or professional, our platform provides an engaging way to explore and understand various algorithms.
-- [Emmet](https://docs.emmet.io/abbreviations/syntax/) - Emmet uses syntax similar to CSS selectors for describing elements’ positions inside generated tree and elements’ attributes.
-- [readdy.ai](https://readdy.ai/) - Transform your idea into beautiful design with code in seconds by our most advanced AI.
-- [bolt.new](https://bolt.new/) - Prompt, run, edit, and deploy full-stack web and mobile apps.
-- [lovable.dev](https://lovable.dev/)
+Curated bookmarks for development and learning.
 
+## GitHub Pages
 
-[SpotBugs](https://github.com/spotbugs/spotbugs) - A tool for static analysis to look for bugs in Java code. 
-[Spotless](https://github.com/diffplug/spotless/tree/main) - Keep your code spotless.
+This repository is configured for GitHub Pages using Jekyll.
+
+1. Open repository `Settings` -> `Pages`.
+2. Set `Source` to `Deploy from a branch`.
+3. Select branch `main` and folder `/(root)`.
+4. Save and wait for the deployment.
+
+The public homepage content is in `index.md`, and site settings are in `_config.yml`.
