@@ -44,6 +44,10 @@ categories:
         url: "https://docs.emmet.io/abbreviations/syntax/"
         description: "Speed up HTML/CSS writing with compact abbreviations."
         tag: "Frontend"
+      - title: "Shields.io"
+        url: "https://shields.io/"
+        description: "Generate and customize badges for your projects, READMEs, and documentation."
+        tag: "Badge"
 
   - name: "Code Quality"
     note: "Static checks and formatting standards."
