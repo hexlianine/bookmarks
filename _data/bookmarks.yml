@@ -56,3 +56,7 @@ categories:
         url: "https://github.com/diffplug/spotless/tree/main"
         description: "Automated formatting and style enforcement across languages."
         tag: "Formatting"
+      - title: "Enforce"
+        url: "https://maven.apache.org/enforcer/maven-enforcer-plugin/enforce-mojo.html"
+        description: "Maven goal for enforcing build and dependency rules."
+        tag: "Maven"
