@@ -3,7 +3,7 @@
 }
 
 .main-content {
-  max-width: 1100px;
+  max-width: 1180px;
 }
 
 .bookmark-page {
@@ -11,7 +11,6 @@
   color: $text;
 }
 
-// Category sections (like Seesaw category pages)
 .category-section {
   margin-bottom: 2.25rem;
 
@@ -21,12 +20,12 @@
 }
 
 .category-header {
-  margin-bottom: 1rem;
+  margin-bottom: 0.95rem;
 }
 
 .category-title {
-  margin: 0 0 0.25rem;
-  font-size: 1.15rem;
+  margin: 0 0 0.2rem;
+  font-size: 1.05rem;
   font-weight: 600;
   letter-spacing: 0.01em;
 }
@@ -34,32 +33,32 @@
 .category-note {
   margin: 0;
   color: $muted;
-  font-size: 0.9rem;
-  line-height: 1.4;
+  font-size: 0.88rem;
+  line-height: 1.35;
 }
 
-// Card grid
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   gap: 1rem;
 }
 
-// Individual bookmark cards (Seesaw-style)
 .bookmark-card {
   display: block;
   background: $surface;
   border: 1px solid $border;
   border-radius: 12px;
-  padding: 1.1rem 1.15rem;
+  padding: 1rem;
   text-decoration: none;
   color: inherit;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 2px rgba(20, 29, 45, 0.05);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 
   &:hover {
     text-decoration: none;
-    border-color: darken($border, 8%);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    border-color: darken($border, 10%);
+    box-shadow: 0 10px 24px rgba(20, 29, 45, 0.08);
+    transform: translateY(-2px);
 
     .bookmark-card__title {
       color: $accent;
@@ -72,32 +71,105 @@
   }
 }
 
+.bookmark-card__header {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  min-height: 2.6rem;
+}
+
+.bookmark-card__avatar {
+  width: 2.05rem;
+  height: 2.05rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: $chip-text;
+  background: linear-gradient(145deg, #eef3ff 0%, #dde6ff 100%);
+  border: 1px solid $chip-border;
+  flex-shrink: 0;
+}
+
+.bookmark-card__identity {
+  min-width: 0;
+}
+
 .bookmark-card__title {
   display: block;
   font-weight: 600;
   font-size: 1rem;
-  margin-bottom: 0.35rem;
   color: $text;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.bookmark-card__description {
-  margin: 0 0 0.6rem;
+.bookmark-card__domain {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.77rem;
   color: $muted;
-  font-size: 0.875rem;
-  line-height: 1.4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.bookmark-card__tag {
+.bookmark-card__divider {
+  height: 1px;
+  background: $border;
+  margin: 0.85rem 0 0.8rem;
+}
+
+.bookmark-card__meta-row {
+  display: grid;
+  grid-template-columns: 4.25rem 1fr;
+  align-items: start;
+  column-gap: 0.55rem;
+  margin-bottom: 0.58rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bookmark-card__label {
+  margin-top: 0.12rem;
+  color: $muted;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.bookmark-card__chip {
   display: inline-block;
-  font-size: 0.7rem;
+  justify-self: start;
+  font-size: 0.75rem;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
   color: $chip-text;
   background: $accent-soft;
   border: 1px solid $chip-border;
-  border-radius: 999px;
-  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+  padding: 0.18rem 0.5rem;
+}
+
+.bookmark-card__chip--alt {
+  background: #ecf7f2;
+  border-color: #c8e6d8;
+  color: #2f7b59;
+}
+
+.bookmark-card__meta-row--notes {
+  margin-top: 0.15rem;
+}
+
+.bookmark-card__description {
+  margin: 0;
+  color: $text;
+  font-size: 0.8rem;
+  line-height: 1.45;
 }
 
 @media (max-width: 640px) {

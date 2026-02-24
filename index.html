@@ -12,7 +12,7 @@ title: .bookmarks
     </header>
     <div class="card-grid">
       {% for link in category.links %}
-        {% include bookmark-card.html link=link %}
+        {% include bookmark-card.html link=link category_name=category.name %}
       {% endfor %}
     </div>
   </section>

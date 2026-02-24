@@ -1,5 +1,29 @@
+{% assign initial = include.link.title | slice: 0, 1 | upcase %}
+{% assign domain = include.link.url | replace: 'https://', '' | replace: 'http://', '' | split: '/' | first %}
+
 <a href="{{ include.link.url }}" class="bookmark-card" target="_blank" rel="noopener noreferrer">
-  <span class="bookmark-card__title">{{ include.link.title }}</span>
-  <p class="bookmark-card__description">{{ include.link.description }}</p>
-  <span class="bookmark-card__tag">{{ include.link.tag }}</span>
+  <div class="bookmark-card__header">
+    <span class="bookmark-card__avatar">{{ initial }}</span>
+    <div class="bookmark-card__identity">
+      <span class="bookmark-card__title">{{ include.link.title }}</span>
+      <span class="bookmark-card__domain">{{ domain }}</span>
+    </div>
+  </div>
+
+  <div class="bookmark-card__divider" aria-hidden="true"></div>
+
+  <div class="bookmark-card__meta-row">
+    <span class="bookmark-card__label">CATEGORY</span>
+    <span class="bookmark-card__chip">{{ include.category_name }}</span>
+  </div>
+
+  <div class="bookmark-card__meta-row">
+    <span class="bookmark-card__label">TYPE</span>
+    <span class="bookmark-card__chip bookmark-card__chip--alt">{{ include.link.tag }}</span>
+  </div>
+
+  <div class="bookmark-card__meta-row bookmark-card__meta-row--notes">
+    <span class="bookmark-card__label">NOTES</span>
+    <p class="bookmark-card__description">{{ include.link.description }}</p>
+  </div>
 </a>
