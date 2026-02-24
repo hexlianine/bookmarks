@@ -4,6 +4,36 @@ title: .bookmarks
 ---
 
 <main class="bookmark-page">
+  <section class="bookmark-toolbar" aria-label="Search bookmarks">
+    <label class="bookmark-search" for="bookmark-search-input">
+      <span class="bookmark-search__label">Search</span>
+      <input
+        id="bookmark-search-input"
+        class="bookmark-search__input"
+        type="search"
+        placeholder="Search by name... (Press /)"
+        autocomplete="off"
+      >
+    </label>
+    <div class="bookmark-toolbar__meta">
+      <details id="bookmark-search-help" class="bookmark-search-help">
+        <summary class="bookmark-search-help__summary">Shortcuts</summary>
+        <div class="bookmark-search-help__panel">
+          <p class="bookmark-search-help__title">Keyboard shortcuts</p>
+          <ul class="bookmark-search-help__list">
+            <li><kbd>/</kbd> focus search</li>
+            <li><kbd>Ctrl</kbd> + <kbd>K</kbd> or <kbd>Cmd</kbd> + <kbd>K</kbd> focus search</li>
+            <li><kbd>↑</kbd> / <kbd>↓</kbd> select result</li>
+            <li><kbd>Enter</kbd> open selected result</li>
+            <li><kbd>Esc</kbd> clear search</li>
+            <li><kbd>?</kbd> toggle this help</li>
+          </ul>
+        </div>
+      </details>
+      <p id="bookmark-search-status" class="bookmark-search__status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
   {% for category in site.data.bookmarks.categories %}
   <section class="category-section">
     <header class="category-header">
