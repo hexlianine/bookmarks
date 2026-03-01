@@ -11,3 +11,5 @@ plugins:
 exclude:
   - README.md
   - LICENSE
+
+google_analytics: G-S1GYJ253JD
